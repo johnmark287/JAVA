@@ -23,7 +23,11 @@ class SavingsAccount
     public void setaccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
-    
+
+	public void setBalance(double balance)
+	{
+		this.balance = balance;
+	}
     public String getFullName()
     {
         return firstName + " " + lastName;
@@ -38,20 +42,42 @@ class SavingsAccount
         return balance;
     }
 
+	public void getData()
+	{
+		System.out.println("ACCOUNT USERNAME: " + firstName + " " + lastName + ".");
+		System.out.println("ACCOUNT NUMBER: " + accountNumber + ".");
+		System.out.println("ACCOUNT BALANCE: " + balance);
+	}
 }
 
 public class BankAccount
 {
-    String fname, lname;
-    int accNUm;
-    double balance = 0.00;
+    public static void main(String[] args)
+    {
+		double balance = 0.00;
 
-    SavingsAccount johnmark = new SavingsAccount();
-    Scanner scanner = new Scanner(System.in);
+		SavingsAccount johnmark = new SavingsAccount();
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter your first name: ");
+		String fname = scanner.nextLine();
+		
+		System.out.println("Enter your second name: ");
+		String lname = scanner.nextLine();
+		
+		System.out.println("Enter your phone number: ");
+		int accNum = scanner.nextInt();
+		System.out.println();
+		System.out.println();
+		System.out.println();
 
 
-    System.out.println("Enter your first name: ");
-    fname = scanner.String();
-    
-    scanner.close();
+		johnmark.setFirstName(fname);
+		johnmark.setLastName(lname);
+		johnmark.setaccountNumber(accNum);
+		johnmark.setBalance(balance);
+
+		johnmark.getData();
+		scanner.close();
+	}
 }
