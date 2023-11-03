@@ -1,4 +1,5 @@
 // package Bank Account(MPESA);
+import java.util.Scanner;
 
 class SavingsAccount
 {
@@ -39,6 +40,18 @@ class SavingsAccount
 
 }
 
-public class BankAccount {
+public class BankAccount
+{
+    String fname, lname;
+    int accNUm;
+    double balance = 0.00;
+
+    SavingsAccount johnmark = new SavingsAccount();
+    Scanner scanner = new Scanner(System.in);
+
+
+    System.out.println("Enter your first name: ");
+    fname = scanner.String();
     
+    scanner.close();
 }
