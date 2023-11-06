@@ -1,4 +1,3 @@
-// package Bank Account(MPESA);
 import java.util.Scanner;
 
 class SavingsAccount
