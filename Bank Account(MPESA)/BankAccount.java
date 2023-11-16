@@ -49,6 +49,13 @@ class SavingsAccount
 	}
 }
 
+abstract class A {
+
+    public void show()
+    {
+
+    }
+}
 public class BankAccount
 {
     public static void main(String[] args)
@@ -79,4 +86,6 @@ public class BankAccount
 		johnmark.getData();
 		scanner.close();
 	}
+
+    A classB = new A() {};
 }

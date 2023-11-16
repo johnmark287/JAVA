@@ -2,7 +2,7 @@ public class University
 {
     public static void main(String[] args)
     {
-
+        Jkuat jkuat = new Jkuat();``
     }
 }
 
@@ -12,8 +12,10 @@ class Jkuat
     protected String openDate;
     protected String closeDate;
 
-    public abstract void open()
-    {}
+    // public abstract void open()
+    // {
+        
+    // }
 }
 
 class College extends Jkuat
