@@ -1,14 +1,7 @@
-public class University
-{
-    public static void main(String[] args)
-    {
-        Jkuat jkuat = new Jkuat();``
-    }
-}
 
 class Jkuat
 {
-	protected String college;
+    protected String college;
     protected String openDate;
     protected String closeDate;
 
@@ -17,7 +10,16 @@ class Jkuat
         
     // }
 }
+    
+public class University
+{
+    public static void main(String[] args)
+    {
+        Jkuat jkuat = new Jkuat();
 
+        // jkuat.("COPAS");
+    }
+}
 class College extends Jkuat
 {
     protected String school;
